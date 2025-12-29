@@ -14,7 +14,6 @@ class BankAccount
 	int previousTransaction;
 	String customerName;
 	String customerId;
-	int a = 10;
 	BankAccount(String cname,String cid){
 		this.customerName = cname;
 		this.customerId=cid;
