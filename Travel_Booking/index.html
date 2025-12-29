@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css" />
+    <title>GT Camping Adventures</title>
+  </head>
+  <body>
+    <!-- Particle Background -->
+    <div class="particles" id="particles"></div>
+    
+    <!-- Theme Toggle -->
+    <div class="theme-toggle" id="theme-toggle">
+      <i class="ri-moon-line" id="theme-icon"></i>
+    </div>
+    
+    <!-- Navigation -->
+    <nav>
+      <div class="nav__header">
+        <div class="nav__logo">
+          <a href="#">GT Camping</a>
+        </div>
+        <div class="nav__menu__btn" id="menu-btn">
+          <i class="ri-menu-line"></i>
+        </div>
+      </div>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="#home">HOME</a></li>
+        <li><a href="#features">FEATURES</a></li>
+        <li><a href="#about">ABOUT US</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+      <div class="nav__btns">
+        <button class="btn search-btn" title="Search"><i class="ri-search-line"></i></button>
+        <button class="btn cart-btn" title="Shopping Cart"><i class="ri-shopping-bag-line"></i></button>
+      </div>
+    </nav>
+    
+    <!-- Booking Modal -->
+    <div class="modal" id="booking-modal">
+      <div class="modal-content">
+        <span class="close-modal" id="close-modal">&times;</span>
+        <h2>Book Your Adventure</h2>
+        <form id="booking-form">
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" placeholder="Enter your name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+          </div>
+          <div class="form-group">
+            <label for="tent-type">Tent Type</label>
+            <select id="tent-type" required>
+              <option value="" disabled selected>Select tent type</option>
+              <option value="basic">Basic Tent - $49/night</option>
+              <option value="deluxe">Deluxe Tent - $79/night</option>
+              <option value="family">Family Tent - $99/night</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="dates">Select Dates</label>
+            <input type="text" id="dates" placeholder="Choose dates" onfocus="(this.type='date')" required>
+          </div>
+          <button type="submit" class="btn modal-btn">BOOK NOW</button>
+        </form>
+      </div>
+    </div>
+    
+    <!-- Main Container -->
+    <div class="container" id="home">
+      <div class="container__left">
+        <h1>Enjoy Your <span>Wilderness Adventure</span></h1>
+        <p>Experience the ultimate camping getaway with GT Camping Adventures. Our premium tents and scenic locations offer the perfect escape from the everyday. Whether you're a solo adventurer or with family, we have the perfect spot for you.</p>
+        <div class="container__btn">
+          <button class="btn" id="book-now-btn"><i class="ri-calendar-event-line"></i> BOOK NOW</button>
+        </div>
+        <div class="features-mini">
+          <div class="feature-mini">
+            <i class="ri-shield-check-line"></i>
+            <span>Safe & Secure</span>
+          </div>
+          <div class="feature-mini">
+            <i class="ri-wifi-line"></i>
+            <span>Free WiFi</span>
+          </div>
+          <div class="feature-mini">
+            <i class="ri-fire-line"></i>
+            <span>Campfire Area</span>
+          </div>
+        </div>
+      </div>
+      <div class="container__right floating">
+        <div class="images">
+          <img src="https://images.unsplash.com/photo-1504851149312-7a075b496cc7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="tent-1" class="tent-1" />
+          <img src="https://images.unsplash.com/photo-1563299796-17596ed6b017?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="tent-2" class="tent-2" />
+        </div>
+        <div class="content">
+          <h4>12m2 | 2 beds | Mountain View</h4>
+          <h2>PREMIUM TENT</h2>
+          <h3>Your Ultimate Camping Experience</h3>
+          <p>
+            Designed for those who appreciate the fundamental joys of camping,
+            our selection of premium tents offers comfort and reliability with modern amenities. 
+            Wake up to breathtaking views and fall asleep under the stars.
+          </p>
+          <div class="tent-features">
+            <div class="tent-feature">
+              <i class="ri-user-line"></i>
+              <span>Sleeps 4</span>
+            </div>
+            <div class="tent-feature">
+              <i class="ri-sun-line"></i>
+              <span>Solar Powered</span>
+            </div>
+            <div class="tent-feature">
+              <i class="ri-drop-line"></i>
+              <span>Private Shower</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="location">
+        <span><i class="ri-map-pin-2-fill"></i></span>
+        OUR LOCATION
+      </div>
+      <div class="socials">
+        <span>
+          <a href="#"><i class="ri-facebook-fill"></i></a>
+        </span>
+        <span>
+          <a href="#"><i class="ri-instagram-line"></i></a>
+        </span>
+        <span>
+          <a href="#"><i class="ri-twitter-fill"></i></a>
+        </span>
+      </div>
+    </div>
+    
+    <!-- Features Section -->
+    <section class="features" id="features">
+      <h2 class="section-title">Why Choose GT Camping</h2>
+      <div class="features-grid">
+        <div class="feature-card">
+          <i class="ri-landscape-line"></i>
+          <h3>Scenic Locations</h3>
+          <p>Our campsites are carefully selected for their breathtaking views and proximity to natural attractions.</p>
+        </div>
+        <div class="feature-card">
+          <i class="ri-home-gear-line"></i>
+          <h3>Premium Equipment</h3>
+          <p>We provide high-quality camping gear, comfortable beds, and all necessary amenities for a pleasant stay.</p>
+        </div>
+        <div class="feature-card">
+          <i class="ri-shield-star-line"></i>
+          <h3>Safety First</h3>
+          <p>All our sites are regularly inspected and maintained to ensure your safety and peace of mind.</p>
+        </div>
+        <div class="feature-card">
+          <i class="ri-guide-line"></i>
+          <h3>Expert Guides</h3>
+          <p>Join our guided hikes and nature walks led by experienced outdoor enthusiasts and naturalists.</p>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+      <div class="footer-content">
+        <div class="footer-logo">GT Camping</div>
+        <div class="footer-links">
+          <a href="#home">Home</a>
+          <a href="#features">Features</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+        <div class="copyright">
+          &copy; 2023 GT Camping Adventures. All rights reserved.
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
