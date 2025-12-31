@@ -1,7 +1,8 @@
 public class Addition {
     public static void main(String[] args) {
         int n = 2005;
-        int m = 1234
+        int m = 1234;
+        System.out.println(n + m);
         System.out.println("Hello, World!");
     }
 }
