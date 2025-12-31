@@ -1,6 +1,7 @@
 public class Addition {
     public static void main(String[] args) {
         int n = 2005;
+        int m = 1234
         System.out.println("Hello, World!");
     }
 }
